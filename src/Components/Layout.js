@@ -1,20 +1,26 @@
-import React from 'react'
+import React, { Component } from "react";
 
-function Layout({jobs,title}) {
-    
+class Layout extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { jobs: this.props.data, }
+    }
+    render() { 
+        return ( 
+            <>
+                <h1>Real Topic</h1>
+                {/* {this.props.data.map((job, i) => (
+                    <div className="preview" key={i}>
+                        <p>{job.company}</p>
+                    </div>
+                ))} */}
 
-    return (
-        
-        <>
-            <h1>{title}</h1>
-           {/* {jobs.map((job, i) => (
-               <div className="preview" key={i}>
-                   <h2>Company Name: {job}</h2>
-                   
-               </div>
-           ))} */}
-        </>
-    )
+                {console.log(this.state.data)}
+                
+               
+            </>
+         );
+    }
 }
-
-export default Layout
+ 
+export default Layout;

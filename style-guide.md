@@ -13,7 +13,7 @@ The designs were created to the following widths:
 
 - Desaturated Dark Cyan: hsl(180, 29%, 50%)
 
-### Neutral
+### Neutral 
 
 - Light Grayish Cyan (Background): hsl(180, 52%, 96%)
 - Light Grayish Cyan (Filter Tablets): hsl(180, 31%, 95%)

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root {
+    --primary: hsl(180, 29%, 50%);
+    --background : hsl(180, 52%, 96%);
+    --filter-tablets: hsl(180, 31%, 95%);
+    --Dark-grayish-cyan: hsl(180, 8%, 52%);
+    --Very-dark-grayish-cyan: hsl(180, 14%, 20%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+    background-color: var(--background);
+    line-height: 1.6;
+}
+
+header {
+    background: url('./Components/images/bg-header-desktop.svg') 
+        no-repeat center center/cover;
+    height: 20vh;
+    background-color: var(--Dark-grayish-cyan);
+    z-index: -1;
+}
+
+.jobs {
+    margin-top: 3rem;
+}
+
+.card-flexed {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+}
+
+.card-flexed .logo img {
+    width: 300px;
+    height: 400px;
+}
+
+.card-flexed .logo {
+    margin-right: 1rem;
+}
+
+/* .data-card {
+
+} */
+
+.data-card-flexed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    max-width: 1000px;
+    padding: 1rem;
+}
+
+.data-card .details div h4 {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.details h3 {
+    color: var(--Very-dark-grayish-cyan);
+}
+
+.details-one {
+    display: flex;
+}
+
+.details-two {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details-two p {
+    color: var(--Dark-grayish-cyan);
+    font-size: 12px;
+}
+
+.details-two p::after {
+    content: '   .';
+    z-index: -1;
+    padding-right: 0rem;
+}
+
+.card-jobs-type {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-jobs-type button {
+    margin-right: 2rem;
+    margin-left: 1rem;
+    padding: 7px 3px 7px 3px;
+    background-color: var(--background);
+    color: var(--primary);
+    font-size: 12px;
+    border: none;
+}
+
+.details-one h4 {
+    padding-right: 1rem;
+}
+
+.details-one span {
+    padding-right: 1rem;
+}
